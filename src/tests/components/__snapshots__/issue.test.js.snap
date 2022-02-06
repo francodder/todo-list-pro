@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas a <Issue /> El componente debe mostrarse correctamente 1`] = `
+<div
+  className="issue"
+  onClick={[Function]}
+>
+  <span
+    className="issue__name "
+  >
+    Sacar basura
+  </span>
+  <div
+    className="issue__actions-box"
+  >
+    <span
+      className="issue__icon-button issue__icon-button--edit"
+      onClick={[Function]}
+    >
+      <i
+        className="fa fa-pen"
+      />
+    </span>
+    <span
+      className="issue__icon-button issue__icon-button--delete"
+      onClick={[Function]}
+    >
+      <i
+        className="fa fa-trash"
+      />
+    </span>
+  </div>
+</div>
+`;

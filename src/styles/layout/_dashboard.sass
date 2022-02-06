@@ -1,0 +1,51 @@
+.dashboard
+    width: max-content
+    min-width: 100%
+    height: 100%
+    padding: 5rem
+    display: grid
+    grid-auto-flow: column
+    grid-auto-columns: 27.5rem
+    grid-auto-rows:  32rem
+    column-gap: 5rem 
+    row-gap: 5rem
+    background-color: #202020
+
+
+.add-list
+    width: 100%
+    height: 100%
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    background: transparent
+    border: 2px dotted #333333
+    transition: all .2s
+    cursor: pointer
+
+
+    &__button
+        width: 4rem
+        height: 4rem
+        font-size: 2rem
+        border-radius: 50rem
+        color: #202020
+        background-color: #333333
+        cursor: pointer
+        transition: inherit
+
+    &:hover &__button
+        background-color: #eeeeee
+
+    &__label
+        margin-top: 1rem
+        font-size: 1.4rem
+        color: #333333
+        transition: inherit
+
+    &:hover &__label
+        color: #eeeeee
+
+
+    
