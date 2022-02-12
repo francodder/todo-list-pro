@@ -1,0 +1,34 @@
+/*
+    DISPOSITIVOS
+    --------------------------------
+    0 - 600px       Celulares
+    600 - 900px     Tablets vertical      
+    900 - 1200px    Tablets horizontal
+    1200 - 1800px   PCs y Notebooks ----> Aquí es donde aplican los estilos normales
+    1800px +        Grandes pantallas
+*/
+
+/*
+    $device 
+    --------------------------------
+    - phone
+    - tab-port
+    - tab-land
+    - big-desk
+*/
+
+@mixin respond($device) {
+
+    @if $device == phone {
+        @media (max-width: 37.5em) { @content };    // 600px / 16px = 37.5em
+    }
+    @if $device == tab-port {
+        @media (max-width: 56.25em) { @content };   // 900px / 16px = 56.25em
+    }
+    @if $device == tab-land {
+        @media (max-width: 75em) { @content };      // 1200px / 16px = 75em
+    }
+    @if $device == big-desk {
+        @media (min-width: 112.25em) { @content };  // 1800px / 16px = 112.25em
+    }
+}
