@@ -1,5 +1,6 @@
 html {
-    font-size: 62.5%;           // 1rem = 10px || 10px / 16px = 62.5%
+    // font-size: 62.5%;           // 1rem = 10px || 10px / 16px = 62.5%
+    font-size: 80%;
 
     @include respond(tab-land) {
         font-size: 59.25%;      // 1rem = 9px || 9px / 16px = 59.25%
